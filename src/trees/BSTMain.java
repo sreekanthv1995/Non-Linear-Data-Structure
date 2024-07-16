@@ -12,9 +12,10 @@ public class BSTMain {
         bst.insert(52);
         bst.insert(82);
 
-        System.out.println(bst.insert(27));
-        System.out.println(bst.root.value);
-        System.out.println(bst.root.left.right.value);
-        System.out.println(bst.contains(1));
+        System.out.println(bst.BFS());
+//        System.out.println(bst.insert(27));
+//        System.out.println(bst.root.value);
+//        System.out.println(bst.root.left.right.value);
+//        System.out.println(bst.contains(1));
     }
 }
