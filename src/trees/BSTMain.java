@@ -1,21 +1,26 @@
 package trees;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class BSTMain {
 
     public static void main(String[] args) {
-        BinarySearchTree bst = new BinarySearchTree();
+        BinarySearchTree bst = new BinarySearchTree(50);
 
-        bst.insert(47);
-        bst.insert(21);
-        bst.insert(76);
-        bst.insert(18);
-        bst.insert(52);
-        bst.insert(82);
+        bst.insert(20);
+        bst.insert(70);
+        bst.insert(10);
+        bst.insert(25);
+        bst.insert(60);
+        bst.insert(90);
+        bst.insert(80);
+        bst.insert(75);
 
-        System.out.println(bst.BFS());
-//        System.out.println(bst.insert(27));
-//        System.out.println(bst.root.value);
-//        System.out.println(bst.root.left.right.value);
-//        System.out.println(bst.contains(1));
+        bst.inorderTraversal(bst.root);
+        bst.delete(bst.root,70);
+        System.out.println();
+        bst.inorderTraversal(bst.root);
+
     }
 }
